@@ -1,10 +1,3 @@
 
 
-console.log('testing');
-
-
-
-
-
-
 

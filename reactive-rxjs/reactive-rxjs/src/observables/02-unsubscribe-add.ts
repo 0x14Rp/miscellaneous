@@ -26,7 +26,7 @@ const intervalo$ = new Observable<number>( subscriber => {
 
     return () => {
         clearInterval(interval);
-
+        console.log('Intérvalo destruido');
     }
 
 });
@@ -45,7 +45,7 @@ setTimeout(() => {
     // subs2.unsubscribe()
     // subs3.unsubscribe()
 
-
+    console.log('Completado timeout');
 }, 6000);
 
 

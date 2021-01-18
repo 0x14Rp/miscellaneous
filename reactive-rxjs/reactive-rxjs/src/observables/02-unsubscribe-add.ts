@@ -42,8 +42,8 @@ subs1.add( subs2 )
 
 setTimeout(() => {
     subs1.unsubscribe()
-    // subs2.unsubscribe()
-    // subs3.unsubscribe()
+     subs2.unsubscribe()
+     subs3.unsubscribe()
 
     console.log('Completado timeout');
 }, 6000);

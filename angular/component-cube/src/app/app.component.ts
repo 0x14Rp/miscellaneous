@@ -16,15 +16,15 @@ export class AppComponent implements OnInit {
   }
 
   cube() {
-    var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 1, 10000);
-    var renderer = new THREE.WebGLRenderer();
+    let scene = new THREE.Scene();
+    let camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 1, 10000);
+    let renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
-    var geometry = new THREE.BoxGeometry(700, 700, 700, 10, 10, 10);
-    var material = new THREE.MeshBasicMaterial({color: 0x00ff00, wireframe: true});
-    var cube = new THREE.Mesh(geometry, material);
+    let geometry = new THREE.BoxGeometry(700, 700, 700, 10, 10, 10);
+    let material = new THREE.MeshBasicMaterial({color: 0x00ff00, wireframe: true});
+    let cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
     camera.position.z = 1000;

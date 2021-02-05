@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
     camera.lookAt(0, 0, 0);
 
     const scene = new THREE.Scene();
-    //create a blue LineBasicMaterial
+
     const material = new THREE.LineBasicMaterial({color: 0x0000ff});
 
     const points = [];

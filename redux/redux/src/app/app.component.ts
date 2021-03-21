@@ -1,11 +1,7 @@
 import {Component} from '@angular/core';
 import {Store} from "@ngrx/store";
 import * as actions from "./contador/contador.actions";
-
-
-interface AppState {
-  contador: number;
-}
+import {AppState} from "./app.reducers";
 
 
 @Component({

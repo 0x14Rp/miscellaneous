@@ -23,19 +23,17 @@ export class HijoComponent implements OnInit {
 
   multiplicar() {
     this.contador *= 2;
-    //this.cambioContador.emit(this.contador);
     this.store.dispatch(multiplicar({numero:3}))
   }
 
   dividir() {
     this.contador /= 2;
-   // this.cambioContador.emit(this.contador);
     this.store.dispatch(dividir({numero:3}))
   }
 
-  /*resetNieto(nuevoContador: number) {
+  resetNieto(nuevoContador: number) {
 
     this.contador = nuevoContador;
-    this.cambioContador.emit(this.contador);
-  }*/
+
+  }
 }
